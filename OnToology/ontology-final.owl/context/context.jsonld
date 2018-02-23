@@ -1,0 +1,106 @@
+{
+  "@context" : {
+    "tipoDePuntoRecarga" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#tipoDePuntoRecarga",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#Address"
+    },
+    "ZonaAzul" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#ZonaAzul"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "numeroDePlazas" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#numeroDePlazas",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito",
+      "@type" : "@id"
+    },
+    "sfWithin" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
+      "@type" : "@id"
+    },
+    "hasAddress" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#hasAddress",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.geonames.org/ontology#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "PuntosDeRecarga" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#PuntosDeRecarga"
+    },
+    "Estacionamiento" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#Estacionamiento"
+    },
+    "cercaDe" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#cercaDe",
+      "@type" : "@id"
+    },
+    "adr" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#adr",
+      "@type" : "@id"
+    },
+    "barrio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio",
+      "@type" : "@id"
+    },
+    "tipoEstacionamiento" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#tipoEstacionamiento"
+    },
+    "ZonaVerde" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#ZonaVerde"
+    },
+    "Distrito" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"
+    },
+    "ZonaNaranja" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#ZonaNaranja"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "ZonaMinusvalidos" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos"
+    },
+    "tipoDeConector" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#tipoDeConector",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "numeroDeConectores" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#numeroDeConectores",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "Lugar" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#Lugar"
+    },
+    "Barrio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"
+    },
+    "ZonaRojo" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#ZonaRojo"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Parquimetro" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#Parquimetro"
+    },
+    "street-address" : {
+      "@id" : "http://www.w3.org/2006/vcard/ns#street-address",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "formaDeAparcamiento" : {
+      "@id" : "http://www.semanticweb.org/group03/ontology#formaDeAparcamiento",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

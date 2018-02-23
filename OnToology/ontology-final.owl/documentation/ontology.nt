@@ -1,0 +1,219 @@
+<http://www.semanticweb.org/group03/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#sfWithin> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#Lugar> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "Barrio al que pertenece un fen\u00F3meno geogr\u00E1fico o una entidad administrativa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece al barrio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#sfWithin> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#Lugar> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Distrito al que pertenece un fen\u00F3meno geogr\u00E1fico o una entidad administrativa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece al distrito"@es .
+# 
+# http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/group03/ontology#cercaDe
+<http://www.semanticweb.org/group03/ontology#cercaDe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/group03/ontology#cercaDe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#cercaDe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/group03/ontology#Parquimetro> .
+# 
+# http://www.w3.org/2006/vcard/ns#adr
+<http://www.w3.org/2006/vcard/ns#adr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/vcard/ns#adr> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.w3.org/2006/vcard/ns#hasAddress> .
+# 
+# http://www.w3.org/2006/vcard/ns#hasAddress
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#Lugar> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the components of the delivery address for the object"@en .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has address"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/group03/ontology#formaDeAparcamiento
+<http://www.semanticweb.org/group03/ontology#formaDeAparcamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/group03/ontology#formaDeAparcamiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#formaDeAparcamiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/group03/ontology#formaDeAparcamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica si los coches deben aparcar en bater\u00EDa o l\u00EDnea." .
+<http://www.semanticweb.org/group03/ontology#formaDeAparcamiento> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#formaDeAparcamiento> <http://www.w3.org/2000/01/rdf-schema#label> "formaDeAparcamiento" .
+# 
+# http://www.semanticweb.org/group03/ontology#numeroDeConectores
+<http://www.semanticweb.org/group03/ontology#numeroDeConectores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/group03/ontology#numeroDeConectores> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#PuntosDeRecarga> .
+<http://www.semanticweb.org/group03/ontology#numeroDeConectores> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/group03/ontology#numeroDeConectores> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el n\u00FAmero de conectores para coches el\u00E9ctricos que tiene la plaza de parking en cuesti\u00F3n." .
+<http://www.semanticweb.org/group03/ontology#numeroDeConectores> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#numeroDeConectores> <http://www.w3.org/2000/01/rdf-schema#label> "numeroDeConectores" .
+# 
+# http://www.semanticweb.org/group03/ontology#numeroDePlazas
+<http://www.semanticweb.org/group03/ontology#numeroDePlazas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/group03/ontology#numeroDePlazas> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#numeroDePlazas> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/group03/ontology#numeroDePlazas> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el n\u00FAmero de plazas en la v\u00EDa p\u00FAblica del parking en cuesti\u00F3n." .
+<http://www.semanticweb.org/group03/ontology#numeroDePlazas> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#numeroDePlazas> <http://www.w3.org/2000/01/rdf-schema#label> "numeroDePlazas" .
+# 
+# http://www.semanticweb.org/group03/ontology#tipoDeConector
+<http://www.semanticweb.org/group03/ontology#tipoDeConector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/group03/ontology#tipoDeConector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#PuntosDeRecarga> .
+<http://www.semanticweb.org/group03/ontology#tipoDeConector> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/group03/ontology#tipoDeConector> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el tipo de conector para los coches el\u00E9ctricos de la plaza de parking en cuesti\u00F3n." .
+<http://www.semanticweb.org/group03/ontology#tipoDeConector> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#tipoDeConector> <http://www.w3.org/2000/01/rdf-schema#label> "tipoDeConector" .
+# 
+# http://www.semanticweb.org/group03/ontology#tipoDePuntoRecarga
+<http://www.semanticweb.org/group03/ontology#tipoDePuntoRecarga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/group03/ontology#tipoDePuntoRecarga> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#PuntosDeRecarga> .
+<http://www.semanticweb.org/group03/ontology#tipoDePuntoRecarga> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/group03/ontology#tipoEstacionamiento
+<http://www.semanticweb.org/group03/ontology#tipoEstacionamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/group03/ontology#tipoEstacionamiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#tipoEstacionamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica el tipo de estacionamiento, que puede ser:\n- Zona azul\n- Zona Verde\n- Zona naranja\n- Zona Roja\n- Zona de minusv\u00E1lidos \n- Punto de recarga" .
+<http://www.semanticweb.org/group03/ontology#tipoEstacionamiento> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#tipoEstacionamiento> <http://www.w3.org/2000/01/rdf-schema#label> "tipoDeEstacionamiento" .
+# 
+# http://www.w3.org/2006/vcard/ns#street-address
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#comment> "The street address associated with the address of the object"@en .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#label> "street address"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#comment> "Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio> <http://www.w3.org/2000/01/rdf-schema#label> "Barrio"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#comment> "Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una poblaci\u00F3n para distribuir y ordenar el ejercicio de los derechos civiles y pol\u00EDticos, o de las funciones p\u00FAblicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito> <http://www.w3.org/2000/01/rdf-schema#label> "Distrito"@es .
+# 
+# http://www.geonames.org/ontology#Feature
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/group03/ontology#Estacionamiento
+<http://www.semanticweb.org/group03/ontology#Estacionamiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#Estacionamiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/group03/ontology#Lugar> .
+<http://www.semanticweb.org/group03/ontology#Estacionamiento> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar o parte de la v\u00EDa p\u00FAblica de un centro urbano destinada para aparcar todo tipo de veh\u00EDculos. \n\nSe pueden distinguir distintos tipos de parking seg\u00FAn su tarifa." .
+<http://www.semanticweb.org/group03/ontology#Estacionamiento> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#Estacionamiento> <http://www.w3.org/2000/01/rdf-schema#label> "Estacionamiento" .
+# 
+# http://www.semanticweb.org/group03/ontology#Lugar
+<http://www.semanticweb.org/group03/ontology#Lugar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#Lugar> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#Lugar> <http://www.w3.org/2000/01/rdf-schema#label> "Lugar" .
+# 
+# http://www.semanticweb.org/group03/ontology#Parquimetro
+<http://www.semanticweb.org/group03/ontology#Parquimetro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#Parquimetro> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/group03/ontology#Lugar> .
+<http://www.semanticweb.org/group03/ontology#Parquimetro> <http://www.w3.org/2000/01/rdf-schema#comment> "Dispositivo ubicado en la v\u00EDa p\u00FAblica que permite el ordenamiento y medici\u00F3n del estacionamiento en \u00E1reas definidas para ello." .
+<http://www.semanticweb.org/group03/ontology#Parquimetro> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#Parquimetro> <http://www.w3.org/2000/01/rdf-schema#label> "Parquimetro" .
+# 
+# http://www.semanticweb.org/group03/ontology#PuntosDeRecarga
+<http://www.semanticweb.org/group03/ontology#PuntosDeRecarga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#PuntosDeRecarga> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#PuntosDeRecarga> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza de parking habilitada en la v\u00EDa p\u00FAblica para coches el\u00E9ctricos que debe tener al menos un conector." .
+<http://www.semanticweb.org/group03/ontology#PuntosDeRecarga> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#PuntosDeRecarga> <http://www.w3.org/2000/01/rdf-schema#label> "PuntosDeRecarga" .
+# 
+# http://www.semanticweb.org/group03/ontology#ZonaAzul
+<http://www.semanticweb.org/group03/ontology#ZonaAzul> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#ZonaAzul> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#ZonaAzul> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza de parking habilitada en la v\u00EDa p\u00FAblica con una tarifa determinada." .
+<http://www.semanticweb.org/group03/ontology#ZonaAzul> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#ZonaAzul> <http://www.w3.org/2000/01/rdf-schema#label> "ZonaAzul" .
+# 
+# http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos
+<http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza de parking habilitada en la v\u00EDa p\u00FAblica para personas con discapacidad." .
+<http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos> <http://www.w3.org/2000/01/rdf-schema#label> "ZonaMinusvalidos" .
+# 
+# http://www.semanticweb.org/group03/ontology#ZonaNaranja
+<http://www.semanticweb.org/group03/ontology#ZonaNaranja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#ZonaNaranja> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#ZonaNaranja> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza de parking habilitada en la v\u00EDa p\u00FAblica con una tarifa determinada." .
+<http://www.semanticweb.org/group03/ontology#ZonaNaranja> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#ZonaNaranja> <http://www.w3.org/2000/01/rdf-schema#label> "ZonaNaranja" .
+# 
+# http://www.semanticweb.org/group03/ontology#ZonaRojo
+<http://www.semanticweb.org/group03/ontology#ZonaRojo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#ZonaRojo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#ZonaRojo> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza de parking habilitada en la v\u00EDa p\u00FAblica con una tarifa determinada." .
+<http://www.semanticweb.org/group03/ontology#ZonaRojo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#ZonaRojo> <http://www.w3.org/2000/01/rdf-schema#label> "ZonaRojo" .
+# 
+# http://www.semanticweb.org/group03/ontology#ZonaVerde
+<http://www.semanticweb.org/group03/ontology#ZonaVerde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/group03/ontology#ZonaVerde> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/group03/ontology#Estacionamiento> .
+<http://www.semanticweb.org/group03/ontology#ZonaVerde> <http://www.w3.org/2000/01/rdf-schema#comment> "Plaza de parking habilitada en la v\u00EDa p\u00FAblica para residentes de la zona." .
+<http://www.semanticweb.org/group03/ontology#ZonaVerde> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.semanticweb.org/group03/ontology> .
+<http://www.semanticweb.org/group03/ontology#ZonaVerde> <http://www.w3.org/2000/01/rdf-schema#label> "ZonaVerde" .
+# 
+# http://www.w3.org/2006/vcard/ns#Address
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the components of the delivery address for the  object"@en .
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address"@en .
+# 
+# Generated by the OWL API (version 5.1.0) https://github.com/owlcs/owlapi/
