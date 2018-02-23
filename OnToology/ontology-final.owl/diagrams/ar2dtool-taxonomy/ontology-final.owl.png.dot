@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos" "http://www.semanticweb.org/group03/ontology#ZonaVerde" "http://www.semanticweb.org/group03/ontology#ZonaAzul" "http://www.semanticweb.org/group03/ontology#ZonaRojo" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio" "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" "http://www.semanticweb.org/group03/ontology#Estacionamiento" "http://www.semanticweb.org/group03/ontology#PuntosDeRecarga" "http://www.geonames.org/ontology#Feature" "http://www.semanticweb.org/group03/ontology#Lugar" "http://www.semanticweb.org/group03/ontology#ZonaNaranja" "http://www.semanticweb.org/group03/ontology#Parquimetro" ; /*classes style*/
+	"http://www.semanticweb.org/group03/ontology#ZonaAzul" -> "http://www.semanticweb.org/group03/ontology#Estacionamiento" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/group03/ontology#ZonaNaranja" -> "http://www.semanticweb.org/group03/ontology#Estacionamiento" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/group03/ontology#ZonaRojo" -> "http://www.semanticweb.org/group03/ontology#Estacionamiento" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos" -> "http://www.semanticweb.org/group03/ontology#Estacionamiento" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/group03/ontology#PuntosDeRecarga" -> "http://www.semanticweb.org/group03/ontology#Estacionamiento" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito" -> "http://www.geonames.org/ontology#Feature" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/group03/ontology#ZonaVerde" -> "http://www.semanticweb.org/group03/ontology#Estacionamiento" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/group03/ontology#Estacionamiento" -> "http://www.semanticweb.org/group03/ontology#Lugar" [ label = "rdfs:subClassOf" ];
+	"http://www.semanticweb.org/group03/ontology#Parquimetro" -> "http://www.semanticweb.org/group03/ontology#Lugar" [ label = "rdfs:subClassOf" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio" -> "http://www.geonames.org/ontology#Feature" [ label = "rdfs:subClassOf" ];
+
+}
