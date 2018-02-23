@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/group03/ontology"
+     xml:base="http://www.semanticweb.org/group03/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/group03/ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#barrio">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#Lugar"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio"/>
+        <terms:issued>2014-03-28</terms:issued>
+        <rdfs:comment xml:lang="es">Barrio al que pertenece un fenómeno geográfico o una entidad administrativa</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <rdfs:label xml:lang="es">pertenece al barrio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#distrito">
+        <rdfs:subPropertyOf rdf:resource="http://www.opengis.net/ont/geosparql#sfWithin"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#Lugar"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito"/>
+        <terms:issued>2014-03-28</terms:issued>
+        <rdfs:comment xml:lang="es">Distrito al que pertenece un fenómeno geográfico o una entidad administrativa</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <rdfs:label xml:lang="es">pertenece al distrito</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/ont/geosparql#sfWithin -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#sfWithin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#cercaDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/group03/ontology#cercaDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/group03/ontology#Parquimetro"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#adr -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#adr">
+        <owl:equivalentProperty rdf:resource="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#Lugar"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:comment xml:lang="en">To specify the components of the delivery address for the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#formaDeAparcamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/group03/ontology#formaDeAparcamiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indica si los coches deben aparcar en batería o línea.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://semanticweb.org/group03/ontology"/>
+        <rdfs:label>formaDeAparcamiento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#numeroDeConectores -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/group03/ontology#numeroDeConectores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#PuntosDeRecarga"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Indica el número de conectores para coches eléctricos que tiene la plaza de parking en cuestión.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://semanticweb.org/group03/ontology"/>
+        <rdfs:label>numeroDeConectores</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#numeroDePlazas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/group03/ontology#numeroDePlazas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Indica el número de plazas en la vía pública del parking en cuestión.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://semanticweb.org/group03/ontology"/>
+        <rdfs:label>numeroDePlazas</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#tipoDeConector -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/group03/ontology#tipoDeConector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#PuntosDeRecarga"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Indica el tipo de conector para los coches eléctricos de la plaza de parking en cuestión.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://semanticweb.org/group03/ontology"/>
+        <rdfs:label>tipoDeConector</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#tipoDePuntoRecarga -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/group03/ontology#tipoDePuntoRecarga">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#PuntosDeRecarga"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#tipoEstacionamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/group03/ontology#tipoEstacionamiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:comment>Indica el tipo de estacionamiento, que puede ser:
+- Zona azul
+- Zona Verde
+- Zona naranja
+- Zona Roja
+- Zona de minusválidos 
+- Punto de recarga</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://semanticweb.org/group03/ontology"/>
+        <rdfs:label>tipoDeEstacionamiento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#street-address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#street-address">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The street address associated with the address of the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">street address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio">
+        <rdfs:subClassOf rdf:resource="http://www.geonames.org/ontology#Feature"/>
+        <terms:issued>2014-03-28</terms:issued>
+        <rdfs:comment xml:lang="es">Un barrio es cada una de las partes en que se dividen los pueblos grandes o sus distritos [fuente: Diccionario de la Real Academia (DRAE) 2011]</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <rdfs:label xml:lang="es">Barrio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">
+        <rdfs:subClassOf rdf:resource="http://www.geonames.org/ontology#Feature"/>
+        <terms:issued>2014-03-28</terms:issued>
+        <rdfs:comment xml:lang="es">Un distrito es cada una de las demarcaciones en que se subdivide un territorio o una población para distribuir y ordenar el ejercicio de los derechos civiles y políticos, o de las funciones públicas, o de los servicios administrativos [fuente: Diccionario de la Real Academia (DRAE) 2011]</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
+        <rdfs:label xml:lang="es">Distrito</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geonames.org/ontology#Feature -->
+
+    <owl:Class rdf:about="http://www.geonames.org/ontology#Feature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#Estacionamiento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#Estacionamiento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/group03/ontology#Lugar"/>
+        <rdfs:comment>Lugar o parte de la vía pública de un centro urbano destinada para aparcar todo tipo de vehículos. 
+
+Se pueden distinguir distintos tipos de parking según su tarifa.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>Estacionamiento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#Lugar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#Lugar">
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>Lugar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#Parquimetro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#Parquimetro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/group03/ontology#Lugar"/>
+        <rdfs:comment>Dispositivo ubicado en la vía pública que permite el ordenamiento y medición del estacionamiento en áreas definidas para ello.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>Parquimetro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#PuntosDeRecarga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#PuntosDeRecarga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:comment>Plaza de parking habilitada en la vía pública para coches eléctricos que debe tener al menos un conector.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>PuntosDeRecarga</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#ZonaAzul -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#ZonaAzul">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:comment>Plaza de parking habilitada en la vía pública con una tarifa determinada.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>ZonaAzul</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#ZonaMinusvalidos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:comment>Plaza de parking habilitada en la vía pública para personas con discapacidad.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>ZonaMinusvalidos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#ZonaNaranja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#ZonaNaranja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:comment>Plaza de parking habilitada en la vía pública con una tarifa determinada.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>ZonaNaranja</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#ZonaRojo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#ZonaRojo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:comment>Plaza de parking habilitada en la vía pública con una tarifa determinada.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>ZonaRojo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/group03/ontology#ZonaVerde -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/group03/ontology#ZonaVerde">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/group03/ontology#Estacionamiento"/>
+        <rdfs:comment>Plaza de parking habilitada en la vía pública para residentes de la zona.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/group03/ontology"/>
+        <rdfs:label>ZonaVerde</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Address -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Address">
+        <rdfs:comment xml:lang="en">To specify the components of the delivery address for the  object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">Address</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
